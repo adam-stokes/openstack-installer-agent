@@ -13,3 +13,27 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from tornado.web import RequestHandler
+from uoiagent.routes import route
+
+
+@route('/install/single')
+class SingleInstallHandler(RequestHandler):
+    def post(self):
+        # run single install steps
+        pass
+
+
+@route('/install/multi')
+class MultiInstallHandler(RequestHandler):
+    def post(self):
+        # run single install steps
+        pass
+
+
+@route('/install/landscape')
+class LandscapeInstallHandler(RequestHandler):
+    def post(self):
+        # run single install steps
+        pass
